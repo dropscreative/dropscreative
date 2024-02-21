@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DropsCreative</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"src="sendMail.js"></script>
+    
+    <!-- Email JS -->
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("7VF7ByYvE2ZNaJz0F");
+        })();
+    </script>
+</head>
+
+<button onclick="topFunction()" id="scrollTop" title="Go to top" class="bg-indigo-900  hover:bg-indigo-400 p-4 fixed rounded-lg bottom-5 right-5">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-up-fill text-white" viewBox="0 0 16 16">
+        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+      </svg>
+</button>
+
+<div class="anchor-first" id="home"></div>
+<body class="bg-indigo-950">
+    <div class="container mx-auto mt-8">
+        
+    <nav class="px-7 py-3 mx-auto my-auto max-w-7xl flex flex-col md:flex-row font-mono items-center md:justify-between">
+    
+        <a href="index.html"><div class="text-white text-2xl mr-1 flex flex-row mb-3 md:mb-0 hover:text-indigo">Drops<div class="text-indigo-400">Creative</div></div></a>
+
+        <button class="menu md:hidden block" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="32" height="32" viewBox="0 0 100 100" id="menu-button">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+    
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+            <ul class="pt-4 text-lg text-white md:flex md:justify-between md:pt-0">
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-indigo-400" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-indigo-400" href="#partners">Partners</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-indigo-400" href="#projects">Project</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-indigo-400" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="md:p-4 py-2 block hover:text-indigo-400" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    
+    </nav>
+        
+        <div class="bg-gradient-to-bl from-indigo-800 to-indigo-900 md:mx-auto mt-3 py-24 sm:px-6 sm:py-28 rounded-lg magicpattern">
+            <div class="flex flex-col lg:flex-row justify-between items-center md:mx-14 px-8 gap-14">
+                <div class="flex flex-col lg:w-2/4">
+                    <div class="text-white text-5xl font-bold font-mono">You have come to the right place</div>
+                    <div class="text-white text-lg mt-4 font-light leading-5">We have been working with small & large businesses since 2017 and are trusted to give you the best.</div>
+                    <a href="#contact" class="mt-7 px-6 py-3 w-44 text-blue-100 rounded-lg bg-indigo-900 hover:bg-indigo-600 hover:text-blue-200 text-center flex items-center justify-center"><span class="mr-2">Contact Us</span><i class="lni lni-pointer-right"></i></a>
+                </div>
+                <div class="flex flex-col">
+                    <img src="../media/coding.gif" class="h-52 w-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+
+        <div class="anchor" id="partners"></div>
+        <div class="mt-20 px-7">
+            <div class="text-white text-4xl font-bold text-center font-mono">Our Partners</div>
+            <div class="text-white text-lg mt-2 font-light leading-5 text-center">Don't take our word for it, see who we've worked with before.</div>
+            
+            <div class="grid justify-center text-center mt-20">
+                <div class="grid md:grid-cols-3 grid-cols-2 md:gap-8 gap-4 text-xl font-light cursor-default">
+                    <div class="text-white py-9 px-9 rounded-lg bg-indigo-900 hover:bg-indigo-600" href="#">Showcase Rentals</div>
+                    <div class="text-white py-9 px-9 rounded-lg bg-indigo-900 hover:bg-indigo-600" href="#">Hinge Anatoomia</div>
+                    <div class="text-white py-9 px-9 rounded-lg bg-indigo-900 hover:bg-indigo-600" href="#">Jaspis Grupp</div>
+                    <div class="text-white py-9 px-9 rounded-lg bg-indigo-900 hover:bg-indigo-600" href="#">Money Service</div>
+                    <div class="text-white py-9 px-9 rounded-lg bg-indigo-900 hover:bg-indigo-600" href="#">BreadBox</div>
+                    <div class="text-white py-9 px-9 rounded-lg bg-indigo-900 hover:bg-indigo-600" href="#">AnimeCentral</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-7 py-7 mt-20 magicpattern" id="projects">
+            <div class="text-white text-4xl font-bold text-center font-mono">Our Projects</div>
+            <div class="text-white text-lg mt-2 font-light leading-5 text-center">See the projects we've worked on for our clients, pretty things, aren't they?</div>
+
+            <div class="grid grid-rows-1 mt-20 justify-center mb-5">
+                <div class="grid md:grid-cols-2 justify-center gap-4">
+                    <img src="https://wansum.fun/i/Mk6z7.png" class="w-auto h-full object-cover rounded-lg">
+                    <div class="grid grid-row-3 text-white py-10 px-9 rounded-lg bg-indigo-900 sm:w-2/2 xl:w-2/4 justify-center items-center">
+                        <div class="py-2 rounded-lg font-semibold text-lg">Showcase Rentals</div>
+                        <div class="text-gray-300 mb-6 2xl:mb-0">Showcase Rentals is a vehicle rental company located in Tartu, Estonia. It's website is informative, to provide pictures and details about the vechicles and contact details of the business.</div>
+                        <a href="https://showcaserentals.ee" target="_blank"><span class="py-2 px-7 text-blue-100 rounded-lg bg-indigo-950 hover:bg-indigo-600">Browse</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-rows-1 mt-20 justify-center mb-5">
+                <div class="grid md:grid-cols-2 md:justify-items-end gap-4">
+                    <div class="grid grid-row-3 text-white py-10 px-9 rounded-lg bg-indigo-900 xl:w-2/4 justify-center items-center order-last md:-order-none">
+                        <div class="py-2 rounded-lg font-semibold text-lg">MoneyService</div>
+                        <div class="text-gray-300 mb-6 2xl:mb-0">MoneyService is business that allows you to accept cryptocurrency payments and convert them into fiat currencies. It also conducts KYC and fraud checks.</div>
+                        <a href="https://moneyservice.com" class=""><span class="py-2 px-7 text-blue-100 rounded-lg bg-indigo-950 hover:bg-indigo-600">Browse</span></a>
+                    </div>
+                    <img src="https://wansum.fun/i/RydII.png" class="w-auto h-full object-cover rounded-lg">
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="px-7 py-7 mt-20" id="about">
+            <div class="text-white text-4xl font-bold text-center font-mono">About us</div>
+            <div class="text-white text-lg mt-2 font-light leading-5 text-center">Get to know about us better. We're quite cool.</div>
+
+            <div class="grid grid-rows-1 mt-20 justify-center gap-4">
+                
+                <div class="bg-indigo-900 py-4 rounded-lg">
+                    <div class="grid lg:grid-cols-3 md:grid-rows-1 justify-items-center text-center items-center font-mono gap-3">
+                        <div class="grid grid-rows-2 items-center">
+                            <div class="text-xl text-indigo-400">6 Years</div>
+                            <div class="text-lg text-white -mt-2">In business</div>
+                        </div>
+                        <div class="grid grid-rows-2 items-center">
+                            <div class="text-xl text-indigo-400">30+</div>
+                            <div class="text-lg text-white -mt-2">Happy Clients</div>
+                        </div>
+                        <div class="grid grid-rows-2 items-center">
+                            <div class="text-xl text-indigo-400">200+</div>
+                            <div class="text-lg text-white -mt-2">Websites designed</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            <div class="grid grid-row">
+                <div class="grid lg:grid-cols-3 md:grid-rows-1 gap-4">
+                    <div class="bg-indigo-900 p-20 rounded-lg text-center justify-center">
+                        <div class="grid grid-rows-3 justify-center items-center">
+                            <div class="text-white">Lead by one man</div>
+                            <img src="https://wansum.fun/i/R5vqL.png" class="w-32 h-32 mx-auto rounded-full aspect-square">
+                            <div class="text-white">Tanel Tarraste</div>
+                            <div class="text-white">An avid web developer from a young age, working full time in IT and desiging websites, managing projects and working on new solutions to make life better.</div>
+                            <div class="flex justify-center mt-10 space-x-4 align-center">
+                                <a rel="noopener noreferrer" href="https://github.com/dropscreative" aria-label="GitHub" class="p-2 rounded-md text-gray-100 hover:text-violet-400"><svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+                                <a rel="noopener noreferrer" href="mailto:dropscreativedesign@gmail.com" aria-label="Email" class="p-2 rounded-md text-gray-100 hover:text-violet-400"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-4 lg:mt-0 mt-7">
+                        <div class="p-4 bg-indigo-900 rounded-lg items-center grid justify-center">
+                           <p class="text-indigo-400 font-mono text-lg">Reviews</p>
+                        </div>
+                            <div class="grid grid-rows-4 gap-4">
+                                <div class="grid sm:grid-rows-1 lg:text-start sm:text-center items-center bg-indigo-900 p-6 rounded-lg">
+                                    <blockquote>
+                                          <p class="text-white text-center lg:text-start">
+                                            It was and is a pleasure working with Drops, they've made adjustments, additions and improvements as I've requested and all that for a low price.
+                                          </p>
+                                      </blockquote>
+                                </div>
+                                <div class="grid sm:grid-rows-1 lg:text-start sm:text-center items-center bg-indigo-900 p-6 rounded-lg">
+                                    <blockquote>
+                                          <p class="text-white text-center lg:text-start">
+                                            Drops has filled all the boxes for what we needed and did that in a very short time period. Cannot thank them enough!
+                                          </p>
+                                      </blockquote>
+                                </div>
+                                <div class="grid sm:grid-rows-1 lg:text-start sm:text-center items-center bg-indigo-900 p-6 rounded-lg">
+                                    <blockquote>
+                                          <p class="text-white text-center lg:text-start">
+                                            They made us a beautiful Wordpress blog that looks unique and fits our niche well, thank you.
+                                          </p>
+                                      </blockquote>
+                                </div>
+                                <div class="grid sm:grid-rows-1 lg:text-start sm:text-center items-center bg-indigo-900 p-6 rounded-lg">
+                                    <blockquote>
+                                          <p class="text-white text-center lg:text-start">
+                                            Although I needed something very simple, they delivered me a very complex but minimalistic page. Will order again if I ever find the need.
+                                          </p>     
+                                      </blockquote>
+                                </div>
+                                <div class="grid sm:grid-rows-1 lg:text-start sm:text-center items-center bg-indigo-900 p-6 rounded-lg">
+                                    <blockquote>
+                                          <p class="text-white text-center lg:text-start">
+                                            We needed a professional looking site, that would be quite complex, with many pages (login, registration, dashboard) and what they delivered was perfect.
+                                          </p>     
+                                      </blockquote>
+                                </div>
+
+                            </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 lg:mt-0 mt-7">
+                        
+                        <div class="grid grid-rows-1">
+                            <div class="grid grid-rows-1 gap-4 text-center">
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white"><path fill-rule="evenodd" d="M20.599 1.5c-.376 0-.743.111-1.055.32l-5.08 3.385a18.747 18.747 0 00-3.471 2.987 10.04 10.04 0 014.815 4.815 18.748 18.748 0 002.987-3.472l3.386-5.079A1.902 1.902 0 0020.599 1.5zm-8.3 14.025a18.76 18.76 0 001.896-1.207 8.026 8.026 0 00-4.513-4.513A18.75 18.75 0 008.475 11.7l-.278.5a5.26 5.26 0 013.601 3.602l.502-.278zM6.75 13.5A3.75 3.75 0 003 17.25a1.5 1.5 0 01-1.601 1.497.75.75 0 00-.7 1.123 5.25 5.25 0 009.8-2.62 3.75 3.75 0 00-3.75-3.75z" clip-rule="evenodd" /></svg>
+                                      <div class="text-white">Designed just like you want it</div>
+                                </div>
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white"><path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" /><path fill-rule="evenodd" d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z" clip-rule="evenodd" /></svg>                                      
+                                    <div class="text-white">Responsible, works on every device</div>
+                                </div>
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white">
+                                        <path fill-rule="evenodd" d="M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm3.97.97a.75.75 0 011.06 0l2.25 2.25a.75.75 0 010 1.06l-2.25 2.25a.75.75 0 01-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 010-1.06zm4.28 4.28a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" clip-rule="evenodd" />
+                                      </svg>                                      
+                                    <div class="text-white">Written in TailwindCSS</div>
+                                </div>
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white">
+                                        <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd" />
+                                      </svg>                                                                      
+                                    <div class="text-white">Lightning fast websites</div>
+                                </div>
+                            </div>
+                        </div> 
+                            <div class="grid grid-rows-1 gap-4 text-center">
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white">
+                                        <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+                                        <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z" clip-rule="evenodd" />
+                                        <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
+                                      </svg>                                                           
+                                    <div class="text-white">Below industry standard pricing</div>
+                                </div>
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white">
+                                        <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z" clip-rule="evenodd" />
+                                        <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+                                      </svg>                                                                                          
+                                    <div class="text-white">Multiple revisions available</div>
+                                </div>
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white">
+                                        <path d="M5.507 4.048A3 3 0 017.785 3h8.43a3 3 0 012.278 1.048l1.722 2.008A4.533 4.533 0 0019.5 6h-15c-.243 0-.482.02-.715.056l1.722-2.008z" />
+                                        <path fill-rule="evenodd" d="M1.5 10.5a3 3 0 013-3h15a3 3 0 110 6h-15a3 3 0 01-3-3zm15 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm2.25.75a.75.75 0 100-1.5.75.75 0 000 1.5zM4.5 15a3 3 0 100 6h15a3 3 0 100-6h-15zm11.25 3.75a.75.75 0 100-1.5.75.75 0 000 1.5zM19.5 18a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" clip-rule="evenodd" />
+                                      </svg>                                      
+                                    <div class="text-white">Assistance in setting up web hosting</div>
+                                </div>
+                                <div class="bg-indigo-900 p-5 xl:p-10 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto mb-2 text-white">
+                                        <path d="M18.75 12.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12 6a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 0112 6zM12 18a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 0112 18zM3.75 6.75h1.5a.75.75 0 100-1.5h-1.5a.75.75 0 000 1.5zM5.25 18.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 010 1.5zM3 12a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 013 12zM9 3.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zM12.75 12a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zM9 15.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+                                      </svg>                                      
+                                    <div class="text-white">Cheap adjustments after completion</div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="px-7 py-7 mt-20 magicpattern" id="contact">
+            <div class="text-white text-4xl font-bold text-center font-mono">Contact Us</div>
+            <div class="text-white text-lg mt-2 font-light leading-5 text-center">Want to take the leap and work with us? Get in contact!</div>
+
+            <div class="grid grid-rows-1 mt-20 mb-5 md:justify-center">
+                <div class="grid md:grid-cols-1">
+                    <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
+                        <div class="bg-indigo-900 rounded-lg px-10 py-12 w-auto">
+                            <div class="grid grid-rows-1 lg:grid-cols-2 gap-10 w-auto">
+                                <div>
+                                    <div class="form-group mb-6">
+                                        <label for="formName" class="text-white font-semibold">Name</label>
+                                        <input type="text"
+                                            class="form-control block w-full px-3 mt-2 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                            id="formName" name="formName" placeholder="John Doe" />
+                                    </div>
+                                    <div class="form-group mb-6">
+                                        <label for="formEmail" class="text-white font-semibold">Email</label>
+                                        <input type="text"
+                                            class="form-control block w-full px-3 mt-2 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                            id="formEmail" name="formEmail" placeholder="Email address" />
+                                    </div>
+                                    <div class="form-group mb-6">
+                                        <label for="formText" class="text-white font-semibold">Message</label>
+                                        <textarea
+                                            class="form-control block w-full px-3 mt-2 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                            id="formText"name="formText" rows="3" placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="w-full py-2 px-7 text-blue-100 rounded-lg bg-indigo-950 hover:bg-indigo-600" onclick="sendMail()">Send</button>
+                                </div>
+                                <div class="h-80 lg:h-full">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.899432580246!2d26.728537677804884!3d58.37823288678449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36dc2ae40001%3A0xece8db1364186b2a!2zRW1hasO1ZSDDhHJpa2Vza3Vz!5e0!3m2!1sen!2see!4v1684505749504!5m2!1sen!2see"
+                                    class="h-full object-cover rounded-lg w-full md:w-[32rem]" style="border:0;"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="px-7 py-7 mt-20">
+            <div class="bg-indigo-900 text-white rounded-lg">
+                <div class="p-6 mb-10 "><div class='flex flex-row items-center justify-between' id="copyright"></div></div>
+            </div>
+        </div>
+
+    <!-- Email success/failure scripts for sendMail.js -->
+    <script>
+        function emailSuccess() {
+            let timerInterval
+
+            Swal.fire({
+                title: 'Message sent!',
+                html: 'We will get back to you shortly.',
+                timer: 2300,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading()
+                    const b = Swal.getHtmlContainer().querySelector('b')
+                    timerInterval = setInterval(() => {
+                        b.textContent = Swal.getTimerLeft()
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+
+            }).then((result) => {
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log('Closed by timer.')
+                }
+            })
+        }
+
+        function emailFailure() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Email not sent',
+                text: 'Please send us an email, at dropscreativedesign@gmail.com',
+                showCancelButton: true,
+                showConfirmButton: false,
+                cancelButtonText: 'Close'
+            })
+        }
+    </script>
+
+    <!-- Copyright section -->
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+
+        let dropsLogo = '<div class="text-white text-xl mr-1 flex flex-row hover:text-indigo mr-3">Drops<div class="text-indigo-400">Creative</div></div>';
+
+        document.getElementById('copyright').innerHTML += (dropsLogo + 'Copyright © ' + year);
+    </script>
+
+    <!-- Menu button -->
+    <script>
+        const button = document.querySelector('#menu-button');
+        const menu = document.querySelector('#menu');
+
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Scroll to top -->
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("scrollTop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+
+</html>
